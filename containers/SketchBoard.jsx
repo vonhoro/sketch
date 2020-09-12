@@ -49,7 +49,7 @@ const SketchBoard = ({
 
     // makes an array with them
 
-    let array = Array.from(Array(numberSquares)).map(() => 1);
+    let array = Array.from(Array(Math.floor(numberSquares))).map(() => 1);
 
     //cleans the squares
 

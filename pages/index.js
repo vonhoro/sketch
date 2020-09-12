@@ -65,8 +65,9 @@ export default function Home() {
             className="Reset-left"
             variant="outlined"
             onClick={(e) => {
-              setSquareSize(squareSize - 1);
-              setSquareSize(squareSize + 1);
+              setSquareSize(squareSize + 0.00001);
+              setTimeout((()=>setSquareSize(squareSize)),0)
+              
             }}
           >
             {" "}
