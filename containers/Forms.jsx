@@ -4,7 +4,7 @@ export const Forms = ({ onChange, CurrentValue }) => {
   return (
     <div className="Forms">
       <Typography id="discrete-slider" gutterBottom>
-        Square size
+        Resolution
       </Typography>
       <Slider
         className="Slider"
