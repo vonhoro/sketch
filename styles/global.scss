@@ -1,0 +1,117 @@
+$color1: #182026;
+$color2: #202b33;
+$color3: #293742;
+$color4: #30404d;
+$color5: #394b59;
+
+html,
+body {
+  padding: 2.5vh 0 0 0;
+  margin: 0;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: $color1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.Draw-container {
+  width: 90vw;
+  height: 92vh;
+  background-color: $color4;
+  border-radius: 20%;
+  .Reset-left {
+    top: 88vh;
+    left: 15vw;
+    position: absolute;
+    color: white;
+  }
+  .Reset-right {
+    top: 88vh;
+    left: 79.5vw;
+    position: absolute;
+    color: white;
+  }
+  .Brand {
+    position: absolute;
+    left: 42vw;
+    top: -0.5vh;
+    color: transparent;
+    z-index: 5;
+    font-size: 3.5em;
+    font-family: Tahoma;
+  }
+  .Board {
+    background-color: $color2;
+    position: absolute;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    display: grid;
+    background-color: black;
+    width: 70vw;
+    height: 70vh;
+    justify-content: center;
+
+    .square {
+      height: 100%;
+      width: 100%;
+      color: transparent;
+    }
+  }
+  .Forms {
+    color: white;
+    position: absolute;
+    margin-top: 82vh;
+    margin-left: 20vw;
+    width: 50vw;
+    text-align: center;
+  }
+  .Color-picker-left {
+    position: absolute;
+    height: 50vh;
+    width: 8vw;
+    display: grid;
+    grid-template-columns: 4vw 4vw;
+    margin-top: 20vh;
+    margin-left: 1vw;
+    color: transparent;
+    .Colors {
+      align-self: center;
+      margin-left: 1vw;
+      width: 50%;
+      height: 50%;
+      z-index: 4;
+      border-radius: 100%;
+    }
+  }
+  .Color-picker-right {
+    position: absolute;
+    height: 50vh;
+    width: 8vw;
+    display: grid;
+    grid-template-columns: 4vw 4vw;
+    margin-top: 20vh;
+    margin-left: 81vw;
+    color: transparent;
+    .Colors {
+      align-self: center;
+      margin-left: 1vw;
+      width: 50%;
+      height: 50%;
+      z-index: 4;
+      border-radius: 100%;
+    }
+  }
+}

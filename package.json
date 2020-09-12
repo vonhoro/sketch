@@ -1,0 +1,29 @@
+{
+  "name": "general",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prettier-watch": "onchange \"**/*.scss\" \"components/*.js\" \"components/*.ts\" \"components/*.tsx\"  \"pages/*.js\" \"pages/*.ts\" \"pages/*.tsx\"  \"containers/*.js\" \"containers/*.ts\" \"containers/*.tsx\" \"components/*.jsx\"  \"pages/*.jsx\" \"containers/*.jsx\" -- prettier --write {{changed}}",
+    "sass": "node-sass --recursive --watch src/scss/index.scss --output src"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "gh-pages": "^3.1.0",
+    "next": "9.5.3",
+    "node-sass": "^4.14.1",
+    "nodemon": "^2.0.4",
+    "onchange": "^7.0.2",
+    "prettier": "2.0.5",
+    "react": "16.13.1",
+    "react-color": "^2.18.1",
+    "react-dom": "16.13.1",
+    "sass": "^1.26.10"
+  },
+  "devDependencies": {
+    "@types/node": "^14.6.4",
+    "typescript": "^4.0.2"
+  }
+}

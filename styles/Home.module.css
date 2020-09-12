@@ -1,0 +1,5 @@
+.Board {
+  display: grid;
+  align-self: start;
+  justify-content: center;
+}
